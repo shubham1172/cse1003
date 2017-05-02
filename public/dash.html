@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title> HOME AUTOMATION </title>
+         <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="/public/?filePath=bootstrap/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="/public/?filePath=jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="/public/?filePath=bootstrap/js/bootstrap.min.js"></script>
+        <!-- Meta viewport for mobile displays -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Custom scripts -->
+        <link rel="stylesheet" href="/public/?filePath=styles.css">
+        <script src="/public/?filePath=scripts_dash.js"></script>
+    </head>
+    <body>
+        <div class = "container">
+            <div class="alert alert-info">
+                Welcome <strong><span id = 'username'></span></strong>!
+            </div>
+            <!-- Counter info from GPIO -->
+            Value from the counter:
+            <span class = "badge" id = "bit1">0</span>
+            <span class = "badge" id = "bit2">0</span>
+            <span class = "badge" id = "bit3">0</span>
+            <span class = "badge" id = "bit4">0</span>
+            <br/>
+            i.e. <span id = "decimal">0</span><br/><br/>
+            <b>Room information:</b></br>
+            TEMP <span id = "temp"></span> degree celsius.<br/>
+            HUMIDITY <span id = "humid"></span> %<br/><br/>
+            Home lighting: <button class = "btn btn-success" id = 'light'>TOGGLE</button>
+        </div>
+        <!-- Footer -->
+        <footer class="container-fluid bg-foot text-center foot">
+            <p>Made with <span class="glyphicon glyphicon-heart red"></span> by shubham1172</p> 
+        </footer>
+    </body>
+</html>
